@@ -10,10 +10,10 @@ public class DictionaryReplacer {
     private String result;
 
     public String replace(String strToReplace, Map<String, String> context) {
-        
+
         this.context = context;
-        this.result = strToReplace;        
-        
+        this.result = strToReplace;
+
         if (nothingToDo()) {
             return strToReplace;
         }
@@ -33,7 +33,7 @@ public class DictionaryReplacer {
     private boolean isContextEmpty() {
         return context == null || context.isEmpty();
     }
-    
+
     private boolean thereIs(int begin) {
         return begin != -1;
     }
